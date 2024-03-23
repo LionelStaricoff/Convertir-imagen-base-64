@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +9,40 @@
     <script type="module" src="main.js"></script>
     <title>Conversor de imágenes</title>
 </head>
+
 <body>
- 
+
 
     <div id="registro_opciones">
-        
-    <div class="registro_card">
-        <h4>Elige tu imagen</h4>
-        <img id="avatar" src="" class="avatar">
-        <input style="display: none;" type="password" id="password" placeholder="Inserte una imagen " readonly>
-        <div class="eye_container open" id="eye_container">
-            <div class="eye"></div>
-            <div class="eye"></div>
-        </div>
 
-
-        <div>
-            <h5>Imagen</h5>
-
-            <div class="file-input-container">
-                <label for="file-input" class="file-input-label">Elegir Archivo</label>
-                <input type="file" id="file-input" > <!--onchange="updateFileName()"-->
-                <div id="file-name-container"></div>
+        <div class="registro_card">
+            <h4>Elige tu imagen</h4>
+            <img id="avatar" src="" class="avatar">
+            <input style="display: none;" type="password" id="password" placeholder="Inserte una imagen " readonly>
+            <div class="eye_container open" id="eye_container">
+                <div class="eye"></div>
+                <div class="eye"></div>
             </div>
+
+
+            <div>
+                <h5>Imagen</h5>
+
+                <div class="file-input-container">
+                    <label for="file-input" class="file-input-label">Elegir Archivo</label>
+                    <input type="file" id="file-input"> <!--onchange="updateFileName()"-->
+                    <div id="file-name-container"></div>
+                </div>
+            </div>
+            <a class="login_button">Convertir</a>
+
+            <p><a href="https://github.com/LionelStaricoff" target="_blank">&copy; Lionel Staricoff</a> 
+                <span>& Gladys</span>
+                <img src="MiLogoGrueso-svg.svg" width="70px" alt=""> 
+            </p>
+
         </div>
-        <a class="login_button">Convertir</a>
     </div>
-    </div>
-    
 </body>
 
 
