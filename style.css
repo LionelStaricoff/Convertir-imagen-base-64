@@ -3,8 +3,13 @@
 
 
 body {
+    color: black;
     height: 100vh;
+    width: 100vw;
     position: relative;
+    background-image: url("./collage.jpg");
+    background-size: cover;
+    background-position: center;
 
     .volver span{
         position: absolute;
@@ -26,25 +31,30 @@ body {
     height: 450px;
     display: grid;
     gap: 15px;
-    background-color: var(--azul_principal);
+    background-color: rgb(246, 191, 109);
+    border: 4px solid white;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: -8px 8px 8px 8px rgba(0, 0, 0, 0.8);
     padding: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    opacity: 1;
 
     h4{
         text-align: center;
+        font-size: 1.2em;
     }
     .avatar {
-        width: 90px;
-        height: 90px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         margin: 5px auto 20px;
         overflow: hidden;
-        border: 4px double var(--azul_clarisimo);
+        border: 5px double rgb(249, 248, 247);
+        background-color: rgba(245, 242, 242, 0.534);
+        opacity:initial;
 
         img {
             width: 100%;
@@ -110,9 +120,10 @@ body {
             /* display: inline-block; */
             width: 100%;
             padding: 9px;
-            background-color: #b9bbb9;
+            background-color: #cfd1cf;
             border: 1px solid var(--azul_oscuro);
             color: black;
+            font-weight: 600;
             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.364);
             cursor: pointer;
             border-radius: 8px;
@@ -122,7 +133,7 @@ body {
             align-items: center;
 
             &:hover {
-                color: white;
+                /* color: white; */
                 filter: brightness(70%);
             }
             &:active {
@@ -143,18 +154,22 @@ body {
         }
     }
     .login_button{
-        background-color: var(--azul_oscuro);
-        color: var(--blanco_tenue);
+        background-color: rgb(117, 43, 3);
+        color: white;
         padding: 10px;
         border-radius: 8px;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.364);
+        border: 4px outset  rgb(74, 30, 2);
+        box-shadow: -2px 2px 2px rgb(132, 131, 130);
         cursor: pointer;
         width: 100%;
         height: 100%;
         text-align: center;
+        display: grid;
+        place-content: center;
         a{
             color: var(--blanco);
             display: block;
+        
         }
         &:hover {
             color: var(--blanco);
