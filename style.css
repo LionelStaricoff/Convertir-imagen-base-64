@@ -1,10 +1,22 @@
-@import url("style2.css");
 @import url("styleCartel.css");
 
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
 body {
+    color: white;
     height: 100vh;
+    width: 100vw;
     position: relative;
+    background-image: url("./collage2.png");
+    background-size: cover;
+    background-position: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 
     .volver span{
         position: absolute;
@@ -26,25 +38,29 @@ body {
     height: 450px;
     display: grid;
     gap: 15px;
-    background-color: var(--azul_principal);
+    background-color: rgb(8, 155, 160);
+    border: 4px solid white;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: -8px 8px 15px 5px rgba(0, 0, 0, 0.8);
     padding: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
+    opacity: .95;
 
     h4{
         text-align: center;
+        font-size: 1.2em;
     }
     .avatar {
-        width: 90px;
-        height: 90px;
+        width: 150px;
+        height: 150px;
         border-radius: 50%;
         margin: 5px auto 20px;
         overflow: hidden;
-        border: 4px double var(--azul_clarisimo);
+        border: 5px double rgb(249, 248, 247);
+        background-color: rgba(245, 242, 242, 0.63);
 
         img {
             width: 100%;
@@ -67,8 +83,8 @@ body {
     
         .eye {
             position: inherit;
-            width: 20px;
-            height: 20px;
+            width: 22px;
+            height: 22px;
             display: block;
             margin-right: 2px;
             margin-top: -42px;
@@ -97,7 +113,7 @@ body {
     h5{
         text-align: center;
         margin-bottom: 5px;
-        margin-top: -10px;
+        margin-top: -20px;
         font-size: .8em;;
 
     }
@@ -107,12 +123,12 @@ body {
         justify-content: center;
 
         .file-input-label {
-            /* display: inline-block; */
             width: 100%;
             padding: 9px;
-            background-color: #b9bbb9;
+            background-color: #cfd1cf;
             border: 1px solid var(--azul_oscuro);
             color: black;
+            font-weight: 600;
             box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.364);
             cursor: pointer;
             border-radius: 8px;
@@ -122,7 +138,6 @@ body {
             align-items: center;
 
             &:hover {
-                color: white;
                 filter: brightness(70%);
             }
             &:active {
@@ -143,18 +158,22 @@ body {
         }
     }
     .login_button{
-        background-color: var(--azul_oscuro);
-        color: var(--blanco_tenue);
+        background-color: rgb(153, 80, 41);
+        color: white;
         padding: 10px;
         border-radius: 8px;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.364);
+        border: 4px outset  rgb(74, 30, 2);
+        box-shadow: -2px 2px 2px rgb(132, 131, 130);
         cursor: pointer;
         width: 100%;
         height: 100%;
         text-align: center;
+        display: grid;
+        place-content: center;
         a{
             color: var(--blanco);
             display: block;
+        
         }
         &:hover {
             color: var(--blanco);
@@ -165,6 +184,33 @@ body {
         }
     }
 
+p{
+    font-size: 12px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    color:black;
 
+    border-radius: 3px;
+    font-weight: bold;
+    a{
+        color:black;
+        text-decoration: none;
+
+    }
+
+    span{
+        margin: 0 5px;
+    }
+    
+    img{
+        transform: scale(113%);
+        margin: 0 2px 2px;
+    };
+
+    &:hover {
+        transform: scale(120%);
+    }    
+}
     
 }
