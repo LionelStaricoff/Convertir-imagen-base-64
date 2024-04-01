@@ -7,6 +7,8 @@ Por ejemplo:
 Background-image: url("AQUI IRA EL TEXTO QUE HAS COPIADO DEL CONVERTIDOR");
 
 
+
+
 <div align ='center'>
 
 # Conversor de imagenes
