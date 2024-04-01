@@ -4,7 +4,9 @@
 
 Esta app te permitirá convertir la imagen a texto y copiar dicho texto, el cual podrás pegar en lugar del archivo de la imagen.<br>
 Por ejemplo:
-Background-image: url("AQUI IRA EL TEXTO QUE HAS COPIADO DEL CONVERTIDOR");
+Background-image: url(" Aquí irá el texto que has copiado del convertidor ");
+
+Link de la app: https://convertirimagenacodigo.netlify.app/
 
 
 
