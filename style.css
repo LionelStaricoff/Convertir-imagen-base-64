@@ -33,7 +33,7 @@ body {
         padding: 20px;
         line-height: 2em;
         letter-spacing: 1px;
-        background-color: rgba(6, 62, 64, 0.3);
+        /* background-color: rgba(6, 62, 64, 0.3); */
 
         h1{
             margin-bottom: 10px;
