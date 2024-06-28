@@ -4,13 +4,13 @@ import{cartelAviso} from './cartelAviso.js';
 export class Util{
 
   
-    static guardarImagen64(input) {
+    static async guardarImagen64(input) {
 const avatar = document.querySelector('#avatar');
-        const fileInput = input;
+        const fileInput = await input;
 
-        const file = fileInput.files[0];
+        const file = await fileInput.files[0];
         const reader = new FileReader();
-        reader.onloadend = function () {
+        reader.onloadend = async function () {
 
             const base64String = reader.result;
             sessionStorage.setItem('img',base64String);
